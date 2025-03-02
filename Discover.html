@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-5">
+    <header class="p-5 bg-[#F4F7FF]">
+        <nav class=" w-[100%] h-[100%] border rounded-lg flex justify-between items-center p-10 bg-white">
+            <div class="flex justify-center items-center gap-2">
+             <div> <img w="5" src="assets/logo.png" alt="">  </div>
+             <div class="text-3xl"> Dev <span class="font-bold">Board</span></div>
+            </div>
+             <div>
+                <button id="Back" class="w-32 h-10 border rounded-lg bg-blue-600 text-white">Back to Desk</button>
+             </div>
+           </nav>
+           <!-- blogs -->
+           <h1 class="text-2xl font-bold text-center my-5">Blogs</h1>
+           <!-- Questoon section -->
+           <section>
+            <div class="w-auto h-auto border bg-white p-5 mb-5">
+                <h3 class="font-bold text-1xl">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="my-3">
+                <p class="mt-3">getElementById(): Selects a single element by its unique ID. <br>
+                    getElementsByClassName(): Selects all elements with a specific class name. <br>
+                    getElementsByTagName(): Selects all elements with a specific HTML tag name. <br>
+                    querySelector(): Selects the first element that matches a specified CSS selector. <br>
+                    querySelectorAll(): Selects all elements that match a specified CSS selector.</p>
+            </div>
+            <!-- 2 -->
+            <div class="w-auto h-auto border bg-white p-5 mb-5 ">
+                <h3 class="font-bold text-1xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+                <hr class="my-3">
+                <p class="mt-3">innerHTML:
+
+                    InnerHTML is a JavaScript property that you can use to change the content or value inside an HTML elemen
+                    <br>
+                    
+                    InnerText:
+                    
+                    innerText is a JavaScript property that you can use to change or read the text content inside an HTML element. It works the same way as innerHTML, but innerText only works with text content.
+
+                    
+                    Textcontent:
+                    textContent is a JavaScript property that reads or sets the text content of an HTML element, just like innerText. However, there are some differences between textContent and innerText.    
+                </p>
+            </div>
+            <!-- 3 -->
+            <div class="w-auto h-auto border bg-white p-5 mb-5 ">
+                <h3 class="font-bold text-1xl">Question-3: What is event delegation in the DOM??</h3>
+                <hr class="my-3">
+                <p class="mt-3">Event delegation in the DOM is a technique where you attach a single event listener to a parent element, rather than adding individual event listeners to each of its child elements. This approach leverages the concept of event bubbling.
+
+
+
+                    Event Bubbling:
+                    
+                    When an event occurs on an element, it "bubbles up" through the DOM tree, triggering event listeners on its parent elements.
+                    
+                    
+                    
+                    How Delegation Works:
+                    
+                    Instead of assigning a listener to every child, you assign one listener to the parent. When an event happens on a child, it bubbles up to the parent. The parent's listener then checks the event.target property to determine which child element originated the event.
+                    
+                    
+                    
+                    Benefits:
+                    
+                    Performance: Reduces the number of event listeners, improving performance, especially with many child elements.
+                    
+                    
+                    
+                    Dynamic Elements: Handles events on dynamically added child elements without needing to add new listeners.
+                    
+                    
+                    Simplified Code: Makes event handling code cleaner and more maintainable.</p>
+            </div>
+            <!-- 4 -->
+            <div class="w-auto h-auto border bg-white p-5 mb-5">
+                <h3 class="font-bold text-1xl">Question-4: What is event bubbling in the DOM?</h3>
+                <hr class="my-3">
+                <p class="mt-3">Event bubbling in the DOM is a process where an event first occurs in a child element, then reaches the parent element, and so on. Through this the parent elements can also handle that event. </p>
+            </div>
+            <!-- 5 -->
+            <div class="w-auto h-auto border bg-white p-5 mb-5">
+                <h3 class="font-bold text-1xl">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <hr class="my-3">
+                <p class="mt-3"> Document.createElement() is used to create elements with JavaScript, appendChild() is used to add, and removeChild() is used to remove.</p>
+            </div>
+           </section>
+    </header>
+    <script src="script/discover.js"></script>
+</body>
+</html>
