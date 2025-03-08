@@ -61,7 +61,7 @@ for (const button of buttons) {
         const taskTitle = card.children[1].innerText;
 
         const p = document.createElement('p');
-        p.innerText = `You have Complete The Task ${taskTitle} at ${accurateTime}
+        p.innerText = `You have Completed The  ${taskTitle} at ${accurateTime}
         `;
         p.classList.add('p-[10px]' , 'mb-5' , 'rounded-[8px]' , 'bg-[#F4F7FF]' , 'leading-6' , 'font-medium');
         activityContainer.appendChild(p);
@@ -70,7 +70,7 @@ for (const button of buttons) {
 
         // show the congrats message
         if(clickedItem === buttons.length){
-            alert('Congrates , You have completed all the current task')
+            alert('Congratulation , You have finished all the  task')
         }
     });
 }
